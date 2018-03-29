@@ -18,11 +18,11 @@ header = """
                 font: 16px sans-serif;
                 border-radius: 10px;
             }
-            textarea {
+            textarea {{
                 margin: 10px 0;
                 width: 540px;
                 height: 120px;
-            }
+            }}
         </style>
     </head>
     <body>
@@ -36,7 +36,7 @@ form = """
     <form action="/encrypt" method="post">
         <label for="Rotateby">Rotate by:</label>
             <input type="text" id="Rotateby" name="rot" value="0"/>
-            <textarea name="text"></textarea>
+            <textarea name="text">{0}</textarea>
         <input type= "submit" value="Submit Query"/>
         
     </form>
